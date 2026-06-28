@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether | Holographic Workspace Companion</title>
+  <meta name="description" content="Meet Aether, the world's first smart holographic workspace companion. Elevate your desk setup with gesture controls, AI integration, and dynamic ambient lighting.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Floating Background Glow Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Interactive Fixed Navigation Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="container">
+      <a href="#home" class="logo" id="headerLogo">
+        AETHER<span></span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active" data-sec="home">Home</a></li>
+          <li><a href="#features" class="nav-link" data-sec="features">Features</a></li>
+          <li><a href="#showcase" class="nav-link" data-sec="showcase">Showcase</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link" data-sec="contact">Contact</a></li>
+          <li><a href="#contact" class="header-btn">Reserve Now</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span></span> Next-Gen Workspace Device
+            </div>
+            <h1 class="hero-title">
+              Redefine Your Space. <br>
+              <span class="text-gradient-neon">Experience Holograms.</span>
+            </h1>
+            <p class="hero-description">
+              Aether brings your digital workspace to life with high-definition holographic displays, intuitive air-gestures, and a self-learning AI assistant that declutters your day.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="glow-btn glow-btn-primary">Reserve Waitlist</a>
+              <a href="#features" class="glow-btn glow-btn-secondary">Explore Features</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <!-- Product image generated using AI tool -->
+            <img src="assets/images/aether_device.png" alt="Aether Holographic Workspace Companion" class="hero-image" id="heroImage">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="text-gradient-neon" style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">Intelligence</span>
+          <h2 class="section-title">Futuristic Features, Today</h2>
+          <p class="section-subtitle">Crafted with the absolute best in optics, design, and software engineering to fit on your desk.</p>
+        </div>
+        
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <h3>Holographic Engine</h3>
+            <p>High-density light-field projector displays 3D graphics, widgets, and applications directly in mid-air with stunning clarity.</p>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-hand-sparkles"></i>
+            </div>
+            <h3>Air-Gesture Control</h3>
+            <p>Navigate screens, scroll documents, and manipulate 3D models with natural hand gestures. Zero touch, zero latency.</p>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Nova AI Agent</h3>
+            <p>An on-device, privacy-first AI companion that schedules meetings, summarizes notifications, and manages tasks proactively.</p>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>Ambient Sync</h3>
+            <p>Smart LED rings adapt dynamically to your screen's content and circadian rhythm, maintaining optimal visual comfort.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase" id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <div class="showcase-text">
+            <span class="text-gradient-neon" style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">Engineering</span>
+            <h2>Mastering the Fusion of Form and Function</h2>
+            <p>
+              Aether is milled from a single block of aerospace-grade aluminum, housing an advanced 120Hz light field display, high-fidelity spatial speakers, and an array of micro-cameras for ultra-accurate hand tracking.
+            </p>
+            <div class="specs-list">
+              <div class="spec-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>4K Spatial Light-Field Projection</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>90Hz Infrared Gesture Tracking</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>High-Fidelity Dolby Atmos Speakers</span>
+              </div>
+            </div>
+            <a href="about.html" class="glow-btn glow-btn-secondary">View Detailed Specs</a>
+          </div>
+          <div class="showcase-visual">
+            <div class="showcase-box">
+              <img src="assets/images/aether_device.png" alt="Aether Workspace Engineering close up" id="showcaseImage">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Waitlist Section -->
+    <section class="waitlist" id="contact">
+      <div class="container">
+        <div class="waitlist-card">
+          <h2>Secure Your Aether</h2>
+          <p>Join the priority waitlist to get early-bird discounts and launch details. Shipments begin late 2026.</p>
+          
+          <form class="waitlist-form" id="waitlistForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="firstName" class="form-input" placeholder="First Name" required>
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="lastName" class="form-input" placeholder="Last Name" required>
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" class="form-input" placeholder="Email Address" required>
+              <label for="email">Email Address</label>
+            </div>
+            
+            <button type="submit" class="submit-btn" id="submitBtn">Request Early Access</button>
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            AETHER<span></span>
+          </a>
+          <p>Designing the future of workspace interactions. Premium hardware and intelligent workflows.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="about.html">Specifications</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aether Dynamics Inc. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactivity Script -->
+  <script src="script.js"></script>
+</body>
+</html>
