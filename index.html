@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aether | Holographic Workspace Companion</title>
-  <meta name="description" content="Meet Aether, the world's first smart holographic workspace companion. Elevate your desk setup with gesture controls, AI integration, and dynamic ambient lighting.">
+  <title>GuardianAuth | Secure Authentication Portal</title>
+  <meta name="description" content="Secure registration and login portal with client-side SHA-256 encryption, session management, and role-based dashboards.">
   
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="style.css">
@@ -14,239 +14,262 @@
 </head>
 <body>
 
-  <!-- Floating Background Glow Orbs -->
-  <div class="glow-orb orb-1"></div>
-  <div class="glow-orb orb-2"></div>
-  <div class="glow-orb orb-3"></div>
+  <!-- Floating Alert Container for Notifications -->
+  <div class="alert-container" id="alertContainer"></div>
 
-  <!-- Interactive Fixed Navigation Header -->
-  <header class="main-header" id="mainHeader">
-    <div class="container">
-      <a href="#home" class="logo" id="headerLogo">
-        AETHER<span></span>
-      </a>
-      
-      <nav>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#home" class="nav-link active" data-sec="home">Home</a></li>
-          <li><a href="#features" class="nav-link" data-sec="features">Features</a></li>
-          <li><a href="#showcase" class="nav-link" data-sec="showcase">Showcase</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="#contact" class="nav-link" data-sec="contact">Contact</a></li>
-          <li><a href="#contact" class="header-btn">Reserve Now</a></li>
-        </ul>
-      </nav>
-
-      <button class="hamburger" id="menuToggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="hero-tag">
-              <span></span> Next-Gen Workspace Device
+  <div class="app-container">
+    
+    <!-- 1. LOGIN VIEW PANEL -->
+    <div class="view-panel active" id="loginView">
+      <div class="split-layout">
+        <!-- Visual side banner -->
+        <div class="visual-banner">
+          <img src="assets/images/auth_banner.png" alt="Secure Shield Portal">
+          <div class="visual-overlay"></div>
+          <div class="visual-content">
+            <div class="logo-header">
+              <i class="fa-solid fa-shield-halved"></i> GUARDIAN
             </div>
-            <h1 class="hero-title">
-              Redefine Your Space. <br>
-              <span class="text-gradient-neon">Experience Holograms.</span>
-            </h1>
-            <p class="hero-description">
-              Aether brings your digital workspace to life with high-definition holographic displays, intuitive air-gestures, and a self-learning AI assistant that declutters your day.
-            </p>
-            <div class="hero-actions">
-              <a href="#contact" class="glow-btn glow-btn-primary">Reserve Waitlist</a>
-              <a href="#features" class="glow-btn glow-btn-secondary">Explore Features</a>
-            </div>
+            <h2>Next-Gen User Authentication</h2>
+            <p>Built with native SHA-256 password hashing, secure session management, and role-based access controls.</p>
           </div>
-          <div class="hero-image-wrapper">
-            <div class="hero-image-glow"></div>
-            <!-- Product image generated using AI tool -->
-            <img src="assets/images/aether_device.png" alt="Aether Holographic Workspace Companion" class="hero-image" id="heroImage">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-header">
-          <span class="text-gradient-neon" style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">Intelligence</span>
-          <h2 class="section-title">Futuristic Features, Today</h2>
-          <p class="section-subtitle">Crafted with the absolute best in optics, design, and software engineering to fit on your desk.</p>
         </div>
         
-        <div class="features-grid">
-          <!-- Card 1 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <i class="fa-solid fa-cube"></i>
-            </div>
-            <h3>Holographic Engine</h3>
-            <p>High-density light-field projector displays 3D graphics, widgets, and applications directly in mid-air with stunning clarity.</p>
+        <!-- Login Form Container -->
+        <div class="form-container">
+          <div class="form-header">
+            <h3>Welcome Back</h3>
+            <p>Access your secure dashboard credentials</p>
           </div>
           
-          <!-- Card 2 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <i class="fa-solid fa-hand-sparkles"></i>
-            </div>
-            <h3>Air-Gesture Control</h3>
-            <p>Navigate screens, scroll documents, and manipulate 3D models with natural hand gestures. Zero touch, zero latency.</p>
-          </div>
-          
-          <!-- Card 3 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            <h3>Nova AI Agent</h3>
-            <p>An on-device, privacy-first AI companion that schedules meetings, summarizes notifications, and manages tasks proactively.</p>
-          </div>
-          
-          <!-- Card 4 -->
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <i class="fa-solid fa-wand-magic-sparkles"></i>
-            </div>
-            <h3>Ambient Sync</h3>
-            <p>Smart LED rings adapt dynamically to your screen's content and circadian rhythm, maintaining optimal visual comfort.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Showcase Section -->
-    <section class="showcase" id="showcase">
-      <div class="container">
-        <div class="showcase-content">
-          <div class="showcase-text">
-            <span class="text-gradient-neon" style="font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">Engineering</span>
-            <h2>Mastering the Fusion of Form and Function</h2>
-            <p>
-              Aether is milled from a single block of aerospace-grade aluminum, housing an advanced 120Hz light field display, high-fidelity spatial speakers, and an array of micro-cameras for ultra-accurate hand tracking.
-            </p>
-            <div class="specs-list">
-              <div class="spec-item">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>4K Spatial Light-Field Projection</span>
-              </div>
-              <div class="spec-item">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>90Hz Infrared Gesture Tracking</span>
-              </div>
-              <div class="spec-item">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>High-Fidelity Dolby Atmos Speakers</span>
-              </div>
-            </div>
-            <a href="about.html" class="glow-btn glow-btn-secondary">View Detailed Specs</a>
-          </div>
-          <div class="showcase-visual">
-            <div class="showcase-box">
-              <img src="assets/images/aether_device.png" alt="Aether Workspace Engineering close up" id="showcaseImage">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact & Waitlist Section -->
-    <section class="waitlist" id="contact">
-      <div class="container">
-        <div class="waitlist-card">
-          <h2>Secure Your Aether</h2>
-          <p>Join the priority waitlist to get early-bird discounts and launch details. Shipments begin late 2026.</p>
-          
-          <form class="waitlist-form" id="waitlistForm" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <input type="text" id="firstName" class="form-input" placeholder="First Name" required>
-                <label for="firstName">First Name</label>
-              </div>
-              <div class="form-group">
-                <input type="text" id="lastName" class="form-input" placeholder="Last Name" required>
-                <label for="lastName">Last Name</label>
+          <form class="auth-form" id="loginForm" novalidate>
+            <div class="form-group">
+              <label for="loginEmail">Email Address</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="loginEmail" class="form-input" placeholder="name@domain.com" required>
               </div>
             </div>
             
             <div class="form-group">
-              <input type="email" id="email" class="form-input" placeholder="Email Address" required>
-              <label for="email">Email Address</label>
+              <label for="loginPassword">Password</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-lock input-icon"></i>
+                <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" required>
+                <i class="fa-solid fa-eye-slash password-toggle" id="toggleLoginPass"></i>
+              </div>
             </div>
             
-            <button type="submit" class="submit-btn" id="submitBtn">Request Early Access</button>
-            <div class="form-message" id="formMessage"></div>
+            <button type="submit" class="auth-btn" id="loginSubmitBtn">
+              <i class="fa-solid fa-right-to-bracket"></i> Sign In
+            </button>
           </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#home" class="logo">
-            AETHER<span></span>
-          </a>
-          <p>Designing the future of workspace interactions. Premium hardware and intelligent workflows.</p>
-          <div class="footer-socials">
-            <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          
+          <div class="auth-footer">
+            Don't have an account? <a href="#" id="toRegister">Create Account</a>
           </div>
-        </div>
-        
-        <div class="footer-column">
-          <h4>Product</h4>
-          <ul class="footer-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#showcase">Showcase</a></li>
-            <li><a href="about.html">Specifications</a></li>
-            <li><a href="#">Roadmap</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-column">
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press Kit</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-column">
-          <h4>Legal</h4>
-          <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Security</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2026 Aether Dynamics Inc. All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Cookies</a>
         </div>
       </div>
     </div>
-  </footer>
+
+    <!-- 2. REGISTRATION VIEW PANEL -->
+    <div class="view-panel" id="registerView">
+      <div class="split-layout">
+        <!-- Visual side banner -->
+        <div class="visual-banner">
+          <img src="assets/images/auth_banner.png" alt="Secure Shield Portal">
+          <div class="visual-overlay"></div>
+          <div class="visual-content">
+            <div class="logo-header">
+              <i class="fa-solid fa-shield-halved"></i> GUARDIAN
+            </div>
+            <h2>Simple & Secure</h2>
+            <p>All passwords are encrypted client-side using industry-standard SHA-256 algorithms before storage.</p>
+          </div>
+        </div>
+        
+        <!-- Registration Form Container -->
+        <div class="form-container">
+          <div class="form-header">
+            <h3>Get Started</h3>
+            <p>Create your secure account in seconds</p>
+          </div>
+          
+          <form class="auth-form" id="registerForm" novalidate>
+            <div class="form-group">
+              <label for="registerUsername">Username</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input type="text" id="registerUsername" class="form-input" placeholder="e.g. janesmith" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="registerEmail">Email Address</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="registerEmail" class="form-input" placeholder="name@domain.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="registerPassword">Password</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-lock input-icon"></i>
+                <input type="password" id="registerPassword" class="form-input" placeholder="••••••••" required>
+                <i class="fa-solid fa-eye-slash password-toggle" id="toggleRegPass"></i>
+              </div>
+              
+              <!-- Password Strength Bar -->
+              <div class="password-strength-container">
+                <div class="strength-bar">
+                  <div class="strength-fill" id="strengthFill"></div>
+                </div>
+                <span class="strength-label" id="strengthLabel">Enter password</span>
+              </div>
+            </div>
+
+            <!-- Role Selector (RBAC Demo) -->
+            <div class="form-group">
+              <label for="registerRole">Account Role</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-user-gear input-icon"></i>
+                <select id="registerRole" class="form-select">
+                  <option value="user">Standard User</option>
+                  <option value="admin">Administrator</option>
+                </select>
+              </div>
+            </div>
+            
+            <button type="submit" class="auth-btn" id="registerSubmitBtn">
+              <i class="fa-solid fa-user-plus"></i> Register Securely
+            </button>
+          </form>
+          
+          <div class="auth-footer">
+            Already have an account? <a href="#" id="toLogin">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. PROTECTED DASHBOARD VIEW PANEL -->
+    <div class="view-panel" id="dashboardView">
+      <div class="dashboard-layout">
+        <!-- Header -->
+        <div class="dash-header">
+          <div class="dash-user-info">
+            <div class="avatar" id="dashAvatar">U</div>
+            <div class="dash-user-text">
+              <h4 id="dashUsername">Loading User...</h4>
+              <span class="role-badge" id="dashRole">Role</span>
+            </div>
+          </div>
+          <div class="dash-actions">
+            <button class="logout-btn" id="logoutBtn">
+              <i class="fa-solid fa-sign-out-alt"></i> Logout
+            </button>
+          </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="dash-content">
+          
+          <!-- Standard User Section -->
+          <div class="user-panel" id="userPanel">
+            <div class="portal-card">
+              <div class="portal-text">
+                <h3>Welcome to your Secure Dashboard</h3>
+                <p>Your session is active. All authentication routes are protected by client-side browser storage and SHA-256 encryption. Unauthorized access is blocked.</p>
+              </div>
+              <div class="portal-badge">
+                <i class="fa-solid fa-circle-check"></i> Session Valid
+              </div>
+            </div>
+            
+            <!-- Dummy Dashboard Statistics -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-key"></i></div>
+                <div class="stat-text">
+                  <span>Cryptographic Hashing</span>
+                  <h5>SHA-256</h5>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-lock"></i></div>
+                <div class="stat-text">
+                  <span>Session Storage</span>
+                  <h5>Valid Session</h5>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-user-shield"></i></div>
+                <div class="stat-text">
+                  <span>Access Control</span>
+                  <h5>RBAC Enforced</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin-Only Section (Managed via JS) -->
+          <div class="admin-panel" id="adminPanel">
+            <div class="admin-grid">
+              
+              <!-- User Database Table -->
+              <div class="user-db-section">
+                <div class="admin-section-title">
+                  <i class="fa-solid fa-database"></i> Registered Accounts Database
+                </div>
+                <div class="table-card">
+                  <div class="table-wrapper">
+                    <table class="user-table">
+                      <thead>
+                        <tr>
+                          <th>Username</th>
+                          <th>Email</th>
+                          <th>Role</th>
+                          <th>Password Hash (SHA-256)</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody id="userTableBody">
+                        <!-- Filled dynamically -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- System Log Console -->
+              <div class="log-monitor-section">
+                <div class="admin-section-title">
+                  <i class="fa-solid fa-terminal"></i> Security Log Monitor
+                </div>
+                <div class="terminal-card">
+                  <div class="terminal-header">
+                    <div class="terminal-dots">
+                      <div class="terminal-dot"></div>
+                      <div class="terminal-dot"></div>
+                      <div class="terminal-dot"></div>
+                    </div>
+                    <div class="terminal-title">sec-monitor@guardian.system</div>
+                  </div>
+                  <div class="terminal-body" id="logTerminal">
+                    <!-- Logs filled dynamically -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <!-- Interactivity Script -->
   <script src="script.js"></script>
